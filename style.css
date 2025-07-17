@@ -1,0 +1,677 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #ffff00;
+  background-color: black;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(10px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#slide1 [open] {
+  animation: fade-in, fade-out;
+}
+
+#slide2 [open] {
+  animation: fade-in, fade-out;
+}
+
+#slide3 [open] {
+  animation: fade-in, fade-out;
+}
+
+#slide2,
+#slide3 {
+  display: none;
+}
+
+#main-top {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+#greetings {
+  margin-left: 69px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#set-carousel-and-image {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  padding-top: 30px;
+  text-align: left;
+}
+
+#carousel {
+  display: flex;
+  width: 80%;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.slide {
+  flex: 1;
+  padding: 20px;
+  width: 80%;
+  margin-right: -60px;
+  text-align: left;
+}
+
+#slide1,
+#slide2,
+#slide3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  margin-right: -60px;
+}
+
+#slide1 {
+  margin-top: -20px;
+}
+
+#about-me {
+  position: relative;
+  top: -100px;
+  right: -90px;
+  background-color: transparent;
+  width: 10px; /* adjust to fit image size */
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+}
+
+.image-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-button:hover {
+  transform: scale(1.2);
+}
+
+#this-website {
+  position: relative;
+  top: 0px;
+  right: -60px;
+  background-color: transparent;
+  width: 10px; /* adjust to fit image size */
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+}
+
+#lucky-ones {
+  position: relative;
+  top: 100px;
+  right: -90px;
+  background-color: transparent;
+  width: 10px; /* adjust to fit image size */
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+}
+
+#main-image {
+  width: 350px;
+  margin-top: -180px;
+  margin-left: 240px;
+  margin-right: 70px;
+  transform: translatey(0px);
+  animation: float 12s ease-in-out infinite;
+}
+
+#dialog-details {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+#bottom {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  justify-content: space-between;
+}
+
+.tombol-menu {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.tombol-menu:hover {
+  color: #ffff00;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#isi-atas {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#isi-atasp2 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -45px;
+}
+
+#isi-atas-komu {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+#isi-atas-komu1 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+#isi-atas-detail {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -30px;
+}
+
+#isi-tengah {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -40px;
+}
+
+#isi-bawah {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  width: 92%;
+}
+
+#isi-bawah-lidm {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -40px;
+  width: 92%;
+}
+
+#isi-bawahbawah-lidm {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -60px;
+  margin-bottom: 40px;
+  width: 92%;
+}
+
+#isi-bawahbawah-ibt {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  width: 92%;
+}
+
+#isi-transcript {
+  font-family: "Courier New", Courier;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -60px;
+  margin-bottom: 40px;
+}
+
+#isi-sertif-ppsp {
+  font-family: "Courier New", Courier;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+#isi-bawahkmi {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  width: 92%;
+}
+
+#isi-bawahsemnas {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  width: 92%;
+  color: white;
+}
+
+#isi-bawahe-bawah {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -60px;
+  margin-bottom: 40px;
+  max-width: 92%;
+}
+
+hr {
+  color: white;
+}
+
+#education-b {
+  outline: none;
+}
+
+#edu-image {
+  margin-top: -50px;
+  margin-bottom: -40px;
+  width: 20%;
+}
+
+#min-image {
+  margin-top: 35px;
+  margin-bottom: -10px;
+  width: 15%;
+}
+
+#psm-image {
+  margin-top: 35px;
+  margin-bottom: -10px;
+  width: 75%;
+}
+
+#muallimin-image {
+  margin-top: 35px;
+  margin-bottom: -10px;
+  width: 15%;
+}
+
+#java-image {
+  margin-top: 25px;
+  margin-bottom: -45px;
+  width: 40%;
+}
+
+#me-image {
+  margin-top: 1000px;
+  margin-bottom: -10px;
+  width: 15%;
+}
+
+#unesa-image {
+  margin-top: 35px;
+  margin-bottom: -10px;
+  width: 15%;
+}
+
+#kmi-image {
+  margin-top: 35px;
+  margin-bottom: -10px;
+  width: 18%;
+}
+
+#portodeskotak-image {
+  margin-top: 15px;
+  margin-bottom: -10px;
+  width: 29%;
+  padding: 10px;
+}
+
+#portodespp-image {
+  margin-top: 15px;
+  margin-bottom: -10px;
+  width: 86%;
+}
+
+#portodesposter-image {
+  margin-top: -5px;
+  margin-bottom: -10px;
+  height: 35%;
+  padding: 20px;
+}
+
+#experience-b {
+  outline: none;
+}
+
+#achievement-b {
+  outline: none;
+}
+
+#portfolio-b {
+  outline: none;
+}
+
+.rectangle {
+  width: 1200px;
+  height: 10px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.rectangleb {
+  width: 1200px;
+  height: 10px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#bawah {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#portfolio {
+  display: none;
+}
+
+#white {
+  color: white;
+}
+
+#yellow {
+  color: #ffff00;
+}
+
+#judul-education {
+  margin-bottom: 75px;
+}
+
+#cardContainer {
+  position: flex;
+  width: 1000px;
+  height: 340px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#unicardContainer {
+  position: flex;
+  width: 1000px;
+  height: 420px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#opecardContainer {
+  position: flex;
+  width: 1000px;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#psmcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 530px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#interncardContainer {
+  position: flex;
+  width: 1000px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#hmjcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 560px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#lidmcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 525px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#ibtcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background-color: #343434;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+ul {
+  height: 1600px;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+#horigambar {
+  margin-top: -15px;
+  margin-left: -35px;
+}
+
+#dgcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 1550px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#horigambar2 {
+  margin-top: -15px;
+  margin-left: -35px;
+}
+
+#horigambar3 {
+  margin-top: -5px;
+  margin-left: -40px;
+}
+
+#poster {
+  height: 60%;
+}
+
+#isi-bawahedg {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 75px;
+  width: 85%;
+}
+
+#tlcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#ppspcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 850px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#moodlecardContainer {
+  position: flex;
+  width: 1000px;
+  height: 725px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#yutubtl {
+  margin-bottom: 30px;
+}
+
+#xdcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 1150px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#gslmscardContainer {
+  position: flex;
+  width: 1000px;
+  height: 820px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#bookcardContainer {
+  position: flex;
+  width: 1000px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#cover-buku {
+  width: 40%;
+  margin-bottom: 30px;
+}
